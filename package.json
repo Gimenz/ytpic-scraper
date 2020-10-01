@@ -1,0 +1,25 @@
+{
+  "name": "ytpic-scraper",
+  "version": "1.0.0",
+  "description": "Belajar scraping website - scrape url youtube profile picture",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gimenz/ytpic-scraper.git"
+  },
+  "author": "Gimenz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gimenz/ytpic-scraper/issues"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "homepage": "https://github.com/Gimenz/ytpic-scraper#readme"
+}
