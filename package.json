@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Belajar scraping website - scrape url youtube profile picture",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server.js"
+    "start": "nodemon ./src/server.js "
   },
   "repository": {
     "type": "git",
