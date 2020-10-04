@@ -4,6 +4,14 @@ import { load } from "cheerio";
 import { get } from "axios";
 const PORT = process.env.PORT || 3000;
 
+function retObject(status, result) {
+  return {
+    status: status,
+    message: "Powered by gimenz.id",
+    result: result,
+  };
+}
+
 app.get("/api/ytpic", (req, res) => {
   const url = req.query.url;
   get(url, {
@@ -19,18 +27,10 @@ app.get("/api/ytpic", (req, res) => {
       $('link[rel="image_src"]').each(() => {
         cerpen = $(this).attr("href");
       });
-      return res.json({
-        status: true,
-        message: "powered by gimenz.id",
-        result: cerpen,
-      });
+      return res.json(retObject(true, cerpen));
     })
     .catch((err) => {
-      return res.json({
-        status: true,
-        message: "powered by gimenz.id",
-        result: err,
-      });
+      return res.json(retObject(false, err));
     });
 });
 
