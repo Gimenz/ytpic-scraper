@@ -1,10 +1,8 @@
 import express from "express";
-import Controller from "./controller.js";
+import { getData } from "./controller/getData.js";
 
 const routes = express.Router();
 
-const controller = new Controller();
-
-routes.get("/api/ytpic", controller.getData);
+routes.get("/api/ytpic", getData);
 
 export default routes;

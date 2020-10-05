@@ -1,10 +1,8 @@
 class RetObject {
-  make(status, result) {
-    return {
-      status: status,
-      message: "Powered by gimenz.id",
-      result: result,
-    };
+  constructor(status, result, message) {
+    this.status = status;
+    this.message = message || "Powered by gimenz.id";
+    this.result = result;
   }
 }
 
