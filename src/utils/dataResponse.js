@@ -1,4 +1,4 @@
-class RetObject {
+class DataResponse {
   constructor(status, result, message) {
     this.status = status;
     this.message = message || "Powered by gimenz.id";
@@ -6,4 +6,4 @@ class RetObject {
   }
 }
 
-export default RetObject;
+export default DataResponse;
